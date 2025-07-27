@@ -1,0 +1,292 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #434455;
+	background-color: #ffffff;
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1158px;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.header {
+	padding: 24px 0 24px 0;
+	border-bottom: 1px solid #e7e9fc;
+}
+
+.logo {
+	width: 115px;
+	height: 24px;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+	gap: 40px;
+	padding-left: 76px;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #2e2f42;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.menu a:hover {
+	color: #404bbf;
+}
+
+.menu a:hover::after {
+}
+
+.menu a:focus {
+	color: #404bbf;
+}
+
+.contact ul {
+	display: flex;
+	gap: 40px;
+	padding-left: 332px;
+}
+
+.contact a {
+	text-decoration: none;
+	color: #434455;
+	font-size: 16px;
+}
+
+.contact a:hover {
+	color: #404bbf;
+}
+
+.contact a:focus {
+	color: #404bbf;
+}
+
+.hero {
+	background-color: #2e2f42;
+	background-image: url(../images/Dark-bg.jpg);
+	color: #ffffff;
+	text-align: center;
+	padding: 120px 0;
+}
+
+.hero h1 {
+	font-size: 56px;
+	font-weight: 700;
+	margin-bottom: 48px;
+}
+
+.btn {
+	background-color: #4d5ae5;
+	color: #fff;
+	width: 169px;
+	height: 56px;
+	border: none;
+	padding: 16px 32px;
+	font-weight: 500;
+	font-size: 16px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #404bbf;
+}
+
+.icons {
+	width: 264px;
+	height: 112px;
+	border: 1px solid #8e8f99;
+	border-radius: 5px;
+	margin-bottom: 8px;
+}
+
+.features {
+	margin: 120px 0;
+}
+
+.features-list {
+	display: flex;
+	gap: 24px;
+}
+
+.features-list h3 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.features-list p {
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: left;
+}
+
+.team {
+	background-color: #f4f4fd;
+	padding: 120px 0;
+	text-align: center;
+}
+
+.team h2 {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 72px;
+}
+
+.team-list {
+	display: flex;
+	gap: 24px;
+	justify-content: center;
+}
+
+.team-list li {
+	background-color: #ffffff;
+	border-radius: 0 0 4px 4px;
+	box-shadow:
+		0 2px 1px rgba(46, 47, 66, 0.08),
+		0 1px 1px rgba(46, 47, 66, 0.16),
+		0 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.contact-1 {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	padding-bottom: 32px;
+	padding-top: 8px;
+}
+
+.contacts {
+	width: 40px;
+	height: 40px;
+}
+
+.descr {
+	padding-top: 32px;
+}
+
+.team-list h3 {
+	font-size: 20px;
+	font-weight: 500;
+	height: 24px;
+}
+
+.team-list p {
+	font-size: 16px;
+	color: #434455;
+	height: 24px;
+	margin-top: 8px;
+}
+
+.portfolio {
+	padding: 120px 0;
+	text-align: center;
+}
+
+.portfolio h2 {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 72px;
+}
+
+.portfolio-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.portfolio-list h3 {
+	font-size: 20px;
+	font-weight: 500;
+	padding: 32px 0 8px 16px;
+	text-align: left;
+}
+
+.portfolio-list p {
+	font-size: 16px;
+	text-align: left;
+	padding-left: 16px;
+}
+
+.portfolio-list li {
+	background-color: #ffffff;
+	border-radius: 0 0 4px 4px;
+	min-width: 360px;
+}
+
+.lower {
+	border: 1px solid #e7e9fc;
+	border-top: none;
+	height: 120px;
+}
+
+h4 {
+	font-weight: 500;
+	font-size: 16px;
+	letter-spacing: 2%;
+}
+
+.footer {
+	display: flex;
+	padding: 100px 0 100px 156px;
+	background-color: #2e2f42;
+	color: #ffffff;
+}
+
+.text-footer {
+	width: 264px;
+	height: 112px;
+}
+
+.text-footer p {
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+.social-media {
+	padding-left: 120px;
+}
+
+.icons-social-media {
+	display: flex;
+	gap: 16px;
+	padding-top: 16px;
+}
