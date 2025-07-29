@@ -101,16 +101,21 @@ p {
 
 .hero {
 	background-color: #2e2f42;
-	background-image: url(../images/Dark-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image:
+		linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+		url('../images/bg.jpg');
 	color: #ffffff;
 	text-align: center;
-	padding: 120px 0;
+	padding: 188px 0;
 }
 
 .hero h1 {
 	font-size: 56px;
 	font-weight: 700;
-	margin-bottom: 48px;
+	padding-bottom: 48px;
 }
 
 .btn {
@@ -132,9 +137,9 @@ p {
 
 .icons {
 	width: 264px;
+	height: 112px;
 	border: 1px solid #8e8f99;
-	border-radius: 5px;
-	margin-bottom: 8px;
+	border-radius: 4px;
 }
 
 .features {
@@ -149,15 +154,14 @@ p {
 .features-list h3 {
 	font-size: 20px;
 	font-weight: 500;
+	width: 264px;
+	padding: 8px 0 8px 0;
 }
 
 .features-list p {
 	font-size: 16px;
 	line-height: 1.5;
-}
-
-.text-icons {
-	display: flex;
+	width: 264px;
 }
 
 .team {
@@ -192,16 +196,20 @@ p {
 	justify-content: center;
 	gap: 24px;
 	padding-bottom: 32px;
-	padding-top: 8px;
 }
 
 .contacts {
 	width: 40px;
 	height: 40px;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-1 .contacts:hover {
+	fill: rgba(64, 75, 191, 1);
 }
 
 .descr {
-	padding-top: 32px;
+	padding: 32px 16px;
 }
 
 .team-list h3 {
@@ -214,7 +222,7 @@ p {
 	font-size: 16px;
 	color: #434455;
 	height: 24px;
-	margin-top: 8px;
+	padding-top: 8px;
 }
 
 .portfolio {
@@ -237,26 +245,54 @@ p {
 .portfolio-list h3 {
 	font-size: 20px;
 	font-weight: 500;
-	padding: 32px 0 8px 16px;
 	text-align: left;
+	padding-bottom: 8px;
 }
 
 .portfolio-list p {
 	font-size: 16px;
 	text-align: left;
-	padding-left: 16px;
 }
 
 .portfolio-list li {
+	position: relative;
+	overflow: hidden;
 	background-color: #ffffff;
 	border-radius: 0 0 4px 4px;
 	min-width: 360px;
 }
 
+.overlay {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(77, 90, 229, 1);
+	color: #f4f4fd;
+	padding: 20px;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 1.5;
+	transition: top 250ms ease-in-out cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list li .overlay:hover {
+	top: 0;
+}
+
+.portfolio-list li:hover {
+	box-shadow:
+		0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+		0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+		0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .lower {
 	border: 1px solid #e7e9fc;
 	border-top: none;
-	height: 120px;
+	padding: 32px 16px;
 }
 
 h4 {
@@ -283,6 +319,10 @@ h4 {
 
 .social-media {
 	padding-left: 120px;
+}
+
+.social-media .contacts:hover {
+	fill: rgba(49, 208, 170, 1);
 }
 
 .icons-social-media {
