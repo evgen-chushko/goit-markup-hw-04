@@ -132,14 +132,13 @@ p {
 
 .icons {
 	width: 264px;
-	height: 112px;
 	border: 1px solid #8e8f99;
 	border-radius: 5px;
 	margin-bottom: 8px;
 }
 
 .features {
-	margin: 120px 0;
+	padding: 120px 0;
 }
 
 .features-list {
@@ -150,13 +149,15 @@ p {
 .features-list h3 {
 	font-size: 20px;
 	font-weight: 500;
-	margin-bottom: 8px;
 }
 
 .features-list p {
 	font-size: 16px;
 	line-height: 1.5;
-	text-align: left;
+}
+
+.text-icons {
+	display: flex;
 }
 
 .team {
@@ -273,7 +274,6 @@ h4 {
 
 .text-footer {
 	width: 264px;
-	height: 112px;
 }
 
 .text-footer p {
